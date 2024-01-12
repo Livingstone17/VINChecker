@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>VIN CHECKER</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="container">
@@ -20,10 +22,12 @@
             <p class="vis">VIS: <span id="vis"></span></p>
             <p class="wmi">WMI: <span id="wmi"></span></p>
             <p class="year">Year: <span id="year"></span></p>
-
         </div>
-    </div>
 
+    <footer>&copy; BoleNiar Technologies<span id="copyright">
+        <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+    </span></footer>
+    </div>
 
 
     <script src="/index.js"></script>

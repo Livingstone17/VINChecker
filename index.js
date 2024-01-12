@@ -24,6 +24,8 @@ var input = document.getElementById('vinNum').value;
       })
       .then(result => {
         console.log(result);
+        var infoSec = document.querySelector('.result-section');
+        infoSec.style.display = 'block';
         document.getElementById('country').innerHTML = result.country
         document.getElementById('manufacturer').innerHTML = result.manufacturer;
         document.getElementById('region').innerHTML = result.region
@@ -31,8 +33,6 @@ var input = document.getElementById('vinNum').value;
         document.getElementById('vis').innerHTML = result.vis
         document.getElementById('wmi').innerHTML = result.wmi
         document.getElementById('year').innerHTML = result.years
-
-
       })
       .catch(error => {
         console.error('Error:', error);
