@@ -151,6 +151,10 @@ footer{
         height: 100vh;
         overflow-x: hidden;
     }
+    .container h3{
+   margin-left: -3em;
+
+    }
     .input-section{
         transform: translate(7vw, 30vh);
     }
